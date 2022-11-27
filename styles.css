@@ -1,1 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* --START HEADER/NAVIGATION-- */
+
+.logo > a {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  height: 10vh;
+  background: #373434;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li a {
+  padding: 0 1.2rem;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul li a::after {
+  content: '';
+  background: #5289e3;
+  height: 0.25rem;
+  width: 0%;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  transition: 0.25s;
+}
+
+ul li a:hover::after {
+  cursor: pointer;
+  width: 100%;
+}
+
+.signup-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  outline: 0;
+  background: #5289e3;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.signup-btn::after {
+  height: 0%;
+}
+
+.signup-btn:hover {
+  background: #33568f;
+  transform: scale(1.05);
+}
+
+/* --END HEADER/NAVIGATION-- */
+
+/* --START HERO SECTION-- */
+
+.hero-container {
+  width: 100vw;
+  height: 80vh;
+  background: #373434;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.hero-txt-content {
+  color: white;
+  margin: auto;
+}
+
+.hero-img {
+  width: 500px;
+  height: 300px;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  margin: 22% auto;
+}
+
+/* --END HERO SECTION-- */
+
+/* --START INFO SECTION-- */
+
+.info-header {
+  margin-top: 3.5rem;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 2rem;
+  margin-left: 35%;
+}
+
+.info {
+  max-width: 200px;
+  text-align: center;
+  color:rgba(0, 0, 0, 0.80)
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  width: 100vw;
+  height: 40vh;
+}
+
+.fake-img {
+  width: 200px;
+  height: 200px;
+  border: 3px solid #267283;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+/* --END INFO SECTION-- */
+
+/* --START QUOTE SECTION-- */
+
+.quote-container {
+  width: 100vw;
+  margin-top: 5rem;
+}
+
+.quote-content {
+  background: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-txt {
+  font-weight: 300;
+  font-size: 32px;
+  font-style: italic;
+}
+
+.quote-author {
+  display: block;
+  margin-top: 250px;
+  font-size: 24px;
+  padding-bottom: 2rem;
+}
+
+/* --END QUOTE SECTION-- */
+
+/* --START FOOTER CTA SECTION-- */
+
+.footer-cta-container {
+  width: 100vw;
+  height: 30vh;
+}
+
+.footer-cta {
+  color: white;
+  background: #3882F6;
+  border-radius: 12px;
+  padding: 4rem;
+  width: 40%;
+  height: 70%;
+  margin: 100px auto;
+}
+
+.footer-subtxt {
+  margin-bottom: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-cta > h3 {
+  margin-bottom: 5px;
+}
+
+.footer-cta-btn {
+  padding: 0.4rem 0.8rem;
+  background: white;
+  color: black;
+  border: 2px solid #3882F6;
+  border-radius: 8px;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.25s;
+}
+
+.footer-cta-btn:hover, .footer-cta-btn:active {
+  background: #3882F6;
+  color: white;
+  border: 2px solid white;
+}
+
+/* --END FOOTER CTA SECTION-- */
+
+/* --START FOOTER SECTION-- */
+
+footer {
+  background: #373434;
+  height: 8vh;
+  width: 100vw;
+}
+
+.footer-content {
+  width: 100%;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* --END FOOTER SECTION-- */
+
+/* --CREDITS-- */
+/* Designed by The Odin Project (https://theodinproject.com) */
+/* Created by BLADESREVENGE (https://github.com/BLADESREVENGE) */
