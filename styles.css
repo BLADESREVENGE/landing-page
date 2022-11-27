@@ -218,12 +218,14 @@ footer {
 }
 
 .footer-content {
+  padding: 1.2rem;
   width: 100%;
   color: rgba(255, 255, 255, 0.75);
   display: flex;
   justify-content: center;
   margin: auto;
   align-items: center;
+  background: #373434;
 }
 
 .footer-link {
